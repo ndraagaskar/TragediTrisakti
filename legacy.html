@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warisan Tragedi Trisakti 1998 - Sejarah Reformasi Indonesia</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS (Sama seperti page sebelumnya, tambah aksen hijau untuk warisan) -->
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #334155; line-height: 1.6; }
+        .navbar { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); box-shadow: 0 4px 12px rgba(30,58,138,0.3); }
+        .navbar-brand { font-weight: 700; color: #fbbf24 !important; text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .nav-link { color: white !important; font-weight: 500; transition: all 0.3s; }
+        .nav-link:hover, .nav-link.active { color: #fbbf24 !important; transform: translateY(-1px); }
+        .hero { background: linear-gradient(rgba(30,58,138,0.8), rgba(30,58,138,0.8)), url('https://via.placeholder.com/1920x600?text=Warisan+Reformasi+1998'); background-size: cover; background-position: center; color: white; padding: 80px 0; text-align: center; }
+        .hero h1 { font-size: 3rem; font-weight: 700; margin-bottom: 1rem; text-shadow: 0 4px 8px rgba(0,0,0,0.3); }
+        .hero p { font-size: 1.2rem; opacity: 0.95; }
+        .section-title { color: #1e3a8a; font-weight: 700; margin-bottom: 3rem; text-align: center; position: relative; }
+        .section-title::after { content: ''; display: block; width: 60px; height: 4px; background: linear-gradient(90deg, #fbbf24, #f59e0b); margin: 10px auto; }
+        .card { border: none; border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); transition: all 0.4s ease; overflow: hidden; }
+        .card:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 20px 40px rgba(16,185,129,0.2); } /* Shadow hijau untuk tema positif */
+        .card-img-top { height: 220px; object-fit: cover; }
+        .btn-primary { background: linear-gradient(135deg, #1e3a8a, #3b82f6); border: none; border-radius: 8px; font-weight: 600; transition: all 0.3s; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(30,58,138,0.3); }
+        .btn-outline-success { border-color: #10b981; color: #10b981; } /* Button untuk detail warisan */
+        .btn-outline-success:hover { background: #10b981; color: white; }
+        .timeline { position: relative; padding: 2rem 0; }
+        .timeline::before { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, #1e3a8a, #10b981); transform: translateX(-50%); }
+        .timeline-item { position: relative; margin: 3rem 0; width: 100%; }
+        .timeline-badge { position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 40px; height: 40px; background: #fbbf24; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #1e3a8a; font-weight: bold; box-shadow: 0 4px 12px rgba(251,191,36,0.4); }
+        .timeline-content { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); transition: all 0.3s; margin: 0 2rem; }
+        .timeline-content:hover { transform: translateX(10px); }
+        .timeline-item:nth-child(odd) .timeline-content { margin-left: 0; margin-right: 2rem; text-align: right; }
+        .timeline-item:nth-child(even) .timeline-content { margin-left: 2rem; margin-right: 0; }
+        .footer { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); color: white; padding: 3rem 0 1rem; }
+        .back-to-top { position: fixed; bottom: 20px; right: 20px; background: #fbbf24; color: #1e3a8a; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 1.2rem; display: none; transition: all 0.3s; z-index: 1000; }
+        .back-to-top.show { display: block; }
+        .back-to-top:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(251,191,36,0.4); }
+        .breadcrumb { background: #f1f5f9; padding: 1rem; border-radius: 8px; margin-bottom: 2rem; }
+        @media (max-width: 768px) { .hero h1 { font-size: 2.5rem; } .timeline::before { left: 30px; } .timeline-item { margin-left: 50px; } .timeline-badge { left: 0; transform: none; } .timeline-content { margin-left: 60px !important; margin-right: 0 !important; text-align: left !important; } }
+        .fade-in { animation: fadeIn 0.8s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .social-links a { transition: color 0.3s; }
+        .social-links a:hover { color: #fbbf24 !important; transform: scale(1.2); }
+        .legacy-card { border-left: 5px solid #10b981; } /* Border hijau untuk cards warisan */
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70">
+
+    <!-- Navbar (Sama seperti sebelumnya, active di Warisan) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-book me-2"></i>Tragedi Trisakti 1998</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house me-1"></i>Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="background.html"><i class="bi bi-info-circle me-1"></i>Latar Belakang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="chronology.html"><i class="bi bi-clock-history me-1"></i>Kronologi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="victims.html"><i class="bi bi-people me-1"></i>Korban</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="legacy.html"><i class="bi bi-trophy me-1"></i>Warisan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="bi bi-images me-1"></i>Galeri</a></li>
+                </ul>
+                <!--<form class="d-flex ms-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Cari sejarah..." aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+                </form>-->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Kecil untuk Sub-Page) -->
+    <section class="hero fade-in">
+        <div class="container">
+            <h1 class="display-4">Warisan Tragedi Trisakti</h1>
+            <p class="lead">Dari pengorbanan empat mahasiswa, lahir era reformasi yang membentuk demokrasi Indonesia modern. Warisan ini mengajarkan nilai kebebasan dan keadilan.</p>
+            <div class="mt-3">
+                <a href="victims.html" class="btn btn-outline-light me-2">Kembali ke Korban</a>
+                <a href="gallery.html" class="btn btn-primary">Lanjut ke Galeri</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="breadcrumb">
+        <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house"></i> Beranda</a></li>
+            <li class="breadcrumb-item active">Warisan</li>
+        </ol>
+    </nav>
+
+    <!-- Main Content: Grid Warisan -->
+<main class="container my-5">
+    <h2 class="section-title fade-in">Dampak dan Pelajaran Abadi</h2>
+    <div class="row g-4 mb-5">
+        <!-- Warisan 1: Jatuhnya Soeharto -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 legacy-card fade-in">
+                <div class="card-body text-center">
+                    <i class="bi bi-arrow-down-circle display-4 text-success mb-3"></i>
+                    <h5 class="card-title text-success">Jatuhnya Soeharto</h5>
+                    <p class="card-text">Tiga hari setelah tragedi, Soeharto mundur mengakhiri 32 tahun rezim otoriter.</p>
+                    <a href="#" class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#detailModalSoeharto">Detail</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Warisan 2: Reformasi Politik -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 legacy-card fade-in">
+                <div class="card-body text-center">
+                    <i class="bi bi-gear display-4 text-success mb-3"></i>
+                    <h5 class="card-title text-success">Reformasi Politik</h5>
+                    <p class="card-text">Amandemen UUD 1945, pemilu bebas, dan akhir dwifungsi ABRI.</p>
+                    <a href="#" class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#detailModalReformasi">Detail</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Warisan 3: Monumen dan Peringatan -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 legacy-card fade-in">
+                <div class="card-body text-center">
+                    <i class="bi bi-building display-4 text-success mb-3"></i>
+                    <h5 class="card-title text-success">Monumen Trisakti</h5>
+                    <p class="card-text">Simbol perjuangan yang dihormati setiap 12 Mei nasional.</p>
+                    <a href="#" class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#detailModalMonumen">Detail</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+        <!-- Timeline Dampak Pasca-1998 -->
+        <h2 class="section-title fade-in">Jalur Waktu Warisan Reformasi</h2>
+        <div class="timeline">
+            <div class="row">
+                <!-- Dampak 1: 1998 - Mundur Soeharto -->
+                <div class="col-md-6 timeline-item fade-in">
+                    <div class="timeline-badge">21 Mei 1998</div>
+                    <div class="timeline-content">
+                        <h5 class="text-success mb-3"><i class="bi bi-check-circle me-2"></i>Mundurnya Soeharto</h5>
+                        <p class="mb-3">BJ Habibie naik tahta, memulai transisi ke demokrasi dengan kebebasan pers dan pemilu.</p>
+                        <a href="#" class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#detailModal1">Baca Lebih Lanjut</a>
+                    </div>
+                </div>        
+
+                <!-- Dampak 2: 1999 - Pemilu -->
+                <div class="col-md-6 timeline-item fade-in">
+                    <div class="timeline-badge">1999</div>
+                    <div class="timeline-content">
+                        <h5 class="text-success mb-3"><i class="bi bi-vote me-2"></i>Pemilu Bebas Pertama</h5>
+                        <p class="mb-3">Pemilu legislatif dan presiden pertama pasca-reformasi, memilih Abdurrahman Wahid sebagai presiden.</p>
+                        <a href="#" class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#detailModal2">Baca Lebih Lanjut</a>
+                    </div>
+                </div>
+
+                <!-- Dampak 3: 2002 - Amandemen UUD -->
+                <div class="col-md-6 timeline-item fade-in">
+                    <div class="timeline-badge">2002</div>
+                    <div class="timeline-content">
+                        <h5 class="text-success mb-3"><i class="bi bi-file-earmark-text me-2"></i>Amandemen UUD 1945</h5>
+                        <p class="mb-3">Empat kali amandemen membatasi kekuasaan presiden, memperkuat DPR, dan menjamin hak asasi manusia.</p>
+                        <a href="#" class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#detailModal3">Baca Lebih Lanjut</a>
+                    </div>
+                </div>
+
+                <!-- Dampak 4: 2004 - Pemilu Langsung -->
+                <div class="col-md-6 timeline-item fade-in">
+                    <div class="timeline-badge">2004</div>
+                    <div class="timeline-content">
+                        <h5 class="text-success mb-3"><i class="bi bi-people-fill me-2"></i>Pemilu Presiden Langsung</h5>
+                        <p class="mb-3">Susilo Bambang Yudhoyono terpilih sebagai presiden pertama melalui pemungutan suara rakyat langsung.</p>
+                        <a href="#" class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#detailModal4">Baca Lebih Lanjut</a>
+                    </div>
+                </div>
+
+                <!-- Dampak 5: 2014 - Demokrasi Matang -->
+                <div class="col-md-6 timeline-item fade-in">
+                    <div class="timeline-badge">2014</div>
+                    <div class="timeline-content">
+                        <h5 class="text-success mb-3"><i class="bi bi-graph-up me-2"></i>Demokrasi yang Matang</h5>
+                        <p class="mb-3">Pemilu damai dan transisi kekuasaan yang mulus, menandai konsolidasi reformasi.</p>
+                        <a href="#" class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#detailModal5">Baca Lebih Lanjut</a>
+                    </div>
+                </div>
+
+                <!-- Dampak 6: Saat Ini - Tantangan Berkelanjutan -->
+                <div class="col-md-6 timeline-item fade-in">
+                    <div class="timeline-badge">Masa Sekarang</div>
+                    <div class="timeline-content">
+                        <h5 class="text-success mb-3"><i class="bi bi-shield-check me-2"></i>Tantangan Demokrasi Saat Ini</h5>
+                                            <p class="mb-3">Generasi muda diingatkan untuk menjaga warisan reformasi dari ancaman otoritarianisme dan menjaga nilai-nilai demokrasi.</p>
+                    <a href="#" class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#detailModal6">Baca Lebih Lanjut</a>
+                    </div>
+                </div>    
+            </div>
+        </div>        
+
+        <div class="modal fade" id="detailModal1" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Detail Mundurnya Soeharto</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead">Proses pengunduran diri Presiden kemudian digantikan oleh B.J. Habibie merupakan suatu penyimpangan. Berlandaskan pasal 9 UUD 1945, dalam pasal ini dijelaskan bahwa sebelum memangku jabatan, Presiden dan Wakil Presiden telah bersumpah menurut agama, atau berjanji sungguh-sungguh di hadapan MPR atau DPR. Seharusnya Presiden Soeharto mengembalikan mandatnya terlebih dahulu kepada MPR. Peristiwa yang terjadi saat itu adalah ketika Presiden Soeharto mundur beliau langsung menyerahkan jabatannya kepada B.J. Habibie. Tetapi Prof. Dr. M. Dimyati Hartono, S.H. berpendapat bahwa sebenarnya terdapat kepentingan politik yang disembunyikan dengan adanya pengunduran diri Presiden yang demikian. Kepentingan politik tersebut ialah kewajiban konstitusional yang harus dilakukan oleh Presiden Soeharto untuk memberi pertanggungjawaban selama pemerintahannya. Menanggapi permasalahan mengenai sah atau tidaknya langkah yang diambil Presiden Soeharto, surat kabar Kompas meliput pemberitaan dengan para ahli hukum dan pemerintah untuk menjawab keraguan masyarakat tersebut. Pada tanggal 22 Mei 1998, Kompasmemuat berita yang berjudul Dari Sisi Hukum Tata Negara Mundurnya Soeharto Timbulkan Pro-Kontra.Menurut Harun, pengunduran diri Presiden Soeharto yang kemudian digantikan oleh wakilnya B.J. Habibie merupakan suatu tindakan yang sah. Hal tersebut berdasarkan pasal 8 UUD 1945. Selama ini banyak pihak yang menilai bahwa proses pengunduran diri Soeharto yang kemudian dilanjutkan oleh pengangkatan Presiden Habibie merupakan tidak sah. Setelah mengundurkan diri, seharusnya Presiden Soeharto mengembalikan mandat. Hal ini justru menurut Harun Alrasid yang tidak ada dalam konstitusi. Tindakan Presiden Soeharto menyerahkan kekuasaan langsung kepada B.J. Habibie dianggap telah menurunkan kredibilitas DPR. Padahal saat itu, DPR masih berfungsi dengan baik dan dimanfaatkan oleh mahasiswa yang proreformasi untuk mengarahkan tujuannya pada lembaga legislatif. Dengan memuat pernyataan Harun Alrasid dan Hamzah Haz sebagai penutup berita maka, surat kabar Kompas secara tidak langsung memberitahukan kepada masyarakat bahwa pengunduran diri Presiden Soeharto dan pengangkatan B.J. Habibie sebagai penggantinya ialah sah menurut pasal 8 UUD 1945 dan juga telah memenuhi Tap MPR No VII/1973 (Febriyanti D,2016).</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        <a href="background.html" class="btn btn-primary">Kembali ke Latar Belakang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="detailModal2" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Detail Pemilu Bebas Pertama</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead">Pelaksanaan pemilu 1999 sebagai pemilu anti tesis pemilu-pemilu pada masa orde baru. Hal ini nampak dari berbagai hal, pertama pemilu 1999 terjadi liberalisasi politik yang melahirkan 48 partai politik. Jika dibandingkan dengan pemilu orde baru khususnya pemilu 1997 hanya terdiri 3 peserta pemilu. Kedua, pemilu 1999 berusaha dibangun atas luberjurdil dibanding pemilu pada masa orde baru hanya mengedepankan pelaksanaaan pemilu luber saja dengan mengabaikan prinsip jurdil. Pemilu 1999 mewujudkan adanya netralitas birokrasi. Terdapat perbedaan yang sangat mendasar dalam pelaksanaan pemilu 1999 di bandingkan dengan pemilu pada masa orde baru (Palenewen J.D.O, et al, 2022).
+                            Berkaitan dengan calon presiden, berada dengan waktu-waktu sebelum dimulainya SU MPR dan Pemilu 1999, hingga menjelang dilangsungkannya pidato pertanggungjawaban Habibie sebagai presiden, hanya memunculkan dua kandidat yang kuat, yakni B.J. Habibie yang dicalonkan Partai Golkar dan Megawati Soekarnoputri yang dicalonkan PDIP. Abdurahman Wahid yang dicalonkan secara resmi oleh Fraksi Reformasi (gabungan PAN dan PK) pada hari rabu tanggal 6 Oktober 1999 tampil sebagai calon alternatif, sekaligus kuda hitam. Rapat Paripurna MPR berlangsung pada hari rabu siang tanggal 20 Oktober 1999 dan menetapkan Abdurahman Wahid sebagai presiden Selanjutnya. Dan pada malam harinya dilakukan pengambilan sumpah jabatan presiden yang diteruskan dengan penyampaian pidato presiden. Dengan ditetapkannya Abdurahman Wahid sebagai presiden, maka secara otomatis sejak saat itu Indonesia memiliki presiden baru. Pengambilan sumpah Abdurahman Wahid sebagai presiden juga sekaligus menjadi pertanda konkrit telah terjadinya peralihan kekuasaan secara damai dan konstitusional dari Bacharuddin Jusuf Habibie kepada Abdurahman Wahid. Tampilnya Abdurahman Wahid sebagai presiden RI dalam SU MPR 1999 menjadikan peralihan kekuasaan dari Habibie kepada Abdurahman Wahid menjadi peralihan kekuasaan presiden yang paling demokratis dan konstitusional sepanjang sejarah ketatanegaraan Indonesia. Abdurahman Wahid sekaligus merupakan satu-satunya presiden RI yang terpilih secara demokratis melalui pemilihan suara di lembaga legislative tertinggi (Dienaputra R.D,et al 2001).</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        <a href="background.html" class="btn btn-primary">Kembali ke Latar Belakang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="detailModal3" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Detail Amandemen UUD 1945</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead">Peristiwa yang terjadi sebelum amandemen pertama ialah peristiwa reformasi. Pada reformasi 1998, isu yang sangat santer di bincangkan adalah adanya rezim Soeharto yang berkuasa terlalu lama. Salah satu  akibat yang dituntut dari reformasi 1998 adalah amandemen UUD 1945. Amandemen terjadi karena sebab-sebab tertentu yang menyebabkan perubahan tersebut perlu dilakukan. Sebagai contoh saat Reformasi 1998, keadaan di Indonesia sudah kacau balau dari sisi ekonomi (krisis moneter) dan dari sisi lainnya yang terlihat dari penjarahan, pembakaran dll. Amandemen yang dilakukan tentu saja tidak mengubah namun memperbaiki agar lebih baik dan tidak multi tafsir. Alasan dilakukannya amandemen pertama UUD 1945, dapat disimpulkan bahwa reformasi yang terjadi pada 1998 adalah pemicu dari diamandemennya UUD 1945.  Selain itu, untuk melakukan amandemen diperlukan suatu alasan yang sangat kuat untuk melakukannya dan terdapat alur yang jelas agar amandemen dapat terjadi. Sedangkan Perubahan Kedua UUD 1945, adalah perubahan kedua pada Undang-Undang Dasar Negara Republik Indonesia Tahun 1945, sebagai hasil Sidang Tahunan Majelis Permusyawaratan Rakyat Tahun 2000 tanggal 7-18 Agustus 2000. Perubahan Ketiga Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 adalah perubahan ketiga pada Undang-Undang Dasar Negara Republik Indonesia Tahun 1945, sebagai hasil Sidang Tahunan Majelis Permusyawaratan Rakyat Tahun 2001 tanggal 1–9 November 2001. Tujuan amandemen ketiga yang lainnya yaitu untuk memperkuat sistem presidensial di Indonesia dengan mengadakan pemilihan umum untuk memilih Presiden/wakil Presiden secara langsung oleh rakyat. Perubahan Keempat UUD 1945, adalah perubahan keempat pada Undang-Undang Dasar Negara Republik Indonesia Tahun 1945, sebagai hasil Sidang Tahunan Majelis Permusyawaratan Rakyat Tahun 2002 tanggal 1-11 Agustus 2002. Tujuan dilakukan amandemen keempat salah satunya yaitu untuk mengoptimalkan kepengurusan MPR dengan menjadikan MPR terdiri atas anggota DPR dan DPD yang dipilih melalui Pemilihan Umum dan diatur lebih lanjut dengan undang-undang (Pertama A, 2004).</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        <a href="background.html" class="btn btn-primary">Kembali ke Latar Belakang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="detailModal4" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Detail Dampak 4</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead">Bangsa kita telah dua kali melakukan pemilu sejak bergulirnya reformasi: yakni tahun 1999 dan tahun 2004. Interpretasi kritis berdasarkan konteks situasi waktu itu adalah SBY adalah bagian 
+dari kemajuan bangsa Indonesia. Di samping itu dapat ditangkap tafsir terselubung di 
+baliknya bahwa sukses politik Indonesia terjadi saat SBY menjabat presiden. Interpretasi kritis atas paparan tekstual wacana menghasilkan beberapa tafsir di baliknya. Diantaranya yang Pertama, yaitu Presiden SBY lebih memiliki kesadaran historis dibandingkan dengan 
+keempat presiden RI lainnya. Kedua, presiden-presiden sebelum SBY kurang memiliki 
+sikap hormat dan menghargai para presiden pendahulunya. SBY hendak menumbuhkan semangat dan optimisme kepada seluruh rakyat agar tetap yakin pada eksistensi Indonesia. Dalam rangka 
+membangun citra diri serba positif, Presiden SBY mengungkapkan secara eksplisit 
+mengenai dinamika kehidupan politik, ekonomi, hukum, dan sosial dalam sepuluh tahun 
+pertama era reformasi. Secara implisit, SBY menggiring persepsi publik bahwa ia 
+merupakan presiden yang memiliki legitimasi tinggi sebagai produk pemilu yang demokratis. Selain itu, SBY juga mengkonstruksi pemahaman publik bahwa ia berjasa 
+besar dalam terbentuknya dinamika kemajuan kehidupan rakyat Indonesia. SBY adalah 
+presiden yang lebih piawai mengeksploitasi pidato kenegaraan sebagai media dan strategi politik pencitraan (politic of imagology, imagery politic) (Jupriono D 2010).</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        <a href="background.html" class="btn btn-primary">Kembali ke Latar Belakang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="detailModal5" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Detail Dampak 5</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead">Pemilu diharapkan dapat menjadi wadah pengumpulan beragam kepentingan masyarakat dan pandangan politik guna memperoleh keputusan dan mempersembahkan kemampuan bertindak suatu negara. Sebab melalui pemilu yang diharapkan oleh masyarakat adalah terjadinya peningkatan yang signifikan terhadap stabilitas pemerintah serta peningkatan dalam legitimasi perwakilan politik, sekaligus demokrasi itu sendiri. Selanjutnya legitimitasi hasil pemilu akan menjelaskan secara transparan apakah hasil pemilu dan sistem pemilu secara umum dapat diterima, apakah satu sistem pemilu itu menyatukan atau malah memecah belah masyarakat. Pada dasarnya pemilu merupakan satu bentuk partisipasi, dimana pencoblos diberi peluang untuk menggarisbawahi keinginan politiknya dengan memilih partai maupun seorang individu sesuai keinginan hati. 
+                            Pada dasarnya Pemilihan Presiden tahun 2014 nampaknya akan ditentukan oleh dua faktor, yang pertama yaitu hasil Pemilu Legislatif bulan April 2014 yang akan menghasilkan partai besar mana yang akan mampu menguasai paling tidak 20% jumlah kursi atau lebih, sebagai syarat untuk dapat mencalonkan capresnya. Sedangkan faktor kedua adalah capres yang populer tanpa melihat track record-nya namun merupakan calon yang kompeten menurut partai politik. Partai politik harus dapat memahami sikap politik pemilih pemula guna meraih simpati dari kaum muda. Perlu disadari pentingnya melibatkan pemuda dalam pelaksanaan pemilu serta perlunya memberi pemahaman dan sosialiasi mengenai manfaat dan tujuan pemilu kepada seluruh masyarakat agar tetap menggunakan hak suaranya. Upaya penting yang harus didorong adalah edukasi politik. Terutama bagi kaum muda, persinggungan politik hari ini akan memberikan dua dampak serius bagi pemilih pemula (Lindawati D.S, 2013).</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        <a href="background.html" class="btn btn-primary">Kembali ke Latar Belakang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="detailModal6" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Detail Tantangan Demokrasi saat Ini</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead"> Demokrasi sangat penting karena memastikan partisipasi aktif rakyat dalam pengambilan keputusan politik. Dalam sistem demokrasi, setiap warga negara memiliki hak yang sama untuk memberikan suara dan berkontribusi dalam menentukan arah dan kebijakan pemerintahan. Demokrasi di Indonesia adalah sebuah sistem pemerintahan yang didasarkan pada prinsip-prinsip demokrasi yang mencakup pemilihan umum, kebebasan berpendapat, kebebasan pers, dan perlindungan hak asasi manusia. Sejak reformasi pada tahun 1998, Indonesia telah mengalami perkembangan yang signifikan menuju demokrasi yang lebih kuat dan inklusif. Namun demokrasi di Indonesia harus terus dikembangkan dan diperkuat untuk mengatasi tantangan dan meningkatkan kualitas hidup masyarakat. Partisipasi aktif dari semua lapisan masyarakat, penegakan hukum yang adil, perlindungan hak-hak asasi manusia, dan peningkatan transparansi dan akuntabilitas pemerintah tetap menjadi fokus utama. Untuk melanjutkan upaya memperkuat demokrasi di Indonesia, langkah-langkah lebih lanjut perlu diambil. Pertama, peningkatan pendidikan politik dan partisipasi masyarakat harus menjadi prioritas. Kedua, transparansi dan akuntabilitas pemerintah harus ditingkatkan. Mekanisme pengawasan yang efektif dan independen perlu didirikan untuk memastikan integritas dan kinerja yang baik dari para pemimpin dan lembaga pemerintahan. Selain itu, perlindungan terhadap kebebasan berpendapat dan kebebasan pers harus terus diperkuat. 
+                            Dalam kesimpulannya, demokrasi di Indonesia adalah sebuah perjalanan yang terus berkembang. Melalui langkah-langkah yang telah disebutkan, yaitu menjaga independensi lembaga-lembaga demokrasi, melibatkan generasi muda, mengatasi polarisasi politik, memperkuat kapasitas institusi dan aktor politik, serta membangun budaya demokrasi di masyarakat, Indonesia dapat memperkuat demokrasi dan mencapai kemajuan yang berkelanjutan. Singkatnya, hukum dan hak asasi manusia adalah dua konsep yang saling berhubungan dan mempengaruhi satu sama lain dalam pembangunan masyarakat yang adil, demokratis dan berkeadilan. Hukum berfungsi sebagai alat penting bagi perlindungan dan penyelenggaraan hak asasi manusia, yang mencerminkan hak-hak yang melekat pada setiap individu berdasarkan martabat, kesetaraan dan kebebasan manusia.Sepanjang sejarah manusia telah terjadi perjuangan panjang untuk pengakuan dan perlindungan hak asasi manusia. Hukum dan hak asasi manusia harus terus dihormati dan ditingkatkan jika kita ingin mencapai masyarakat yang adil dan adil (Ulfiyyati A, et al 2023).</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        <a href="background.html" class="btn btn-primary">Kembali ke Latar Belakang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Section Penutup: Ajakan Bertindak -->
+<section class="container my-5 fade-in">
+    <div class="row justify-content-center text-center">
+        <div class="col-lg-8">
+            <h2 class="section-title">Jaga Warisan Reformasi</h2>
+            <p class="lead mb-4">Mari kita hormati pengorbanan pahlawan muda Trisakti dengan menjadi warga negara yang aktif dan bertanggung jawab dalam demokrasi.</p>
+            <a href="gallery.html" class="btn btn-primary btn-lg me-2">Lihat Galeri Peringatan</a>
+            <a href="index.html" class="btn btn-outline-success btn-lg">Kembali ke Beranda</a>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <!-- Modals untuk Detail Warisan -->
+    <!-- Modal Jatuhnya Soeharto -->
+    <div class="modal fade" id="detailModalSoeharto" tabindex="-1" aria-labelledby="detailModalSoehartoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="detailModalSoehartoLabel"><i class="bi bi-arrow-down-circle me-2"></i>Jatuhnya Soeharto</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Orde Baru adalah sistem administrasi yang aktif dari tahun 1966 hingga 1998. Selama periode ini, upaya dilakukan untuk membangun kembali struktur administrasi yang berfokus pada Presiden, Wakil Presiden dan biro, dengan mengembalikan kerangka cabang presidensial. Kondisi saat ini diperparah dengan jatuhnya perekonomian Indonesia yang tidak dapat diantisipasi oleh otoritas publik seperti yang diharapkan. Akhirnya, perkembangan massa tidak dapat dihentikan, sehingga menimbulkan benturan antara otoritas publik dan individu yang mendorong terjadinya aksi massa di berbagai daerah, khususnya di Jakarta sebagai ibu kota. Mendekati akhir pemerintahannya, Presiden Soeharto mulai ditinggalkan oleh orang-orang dari bironya. Pada 20 Mei, Harmoko dan oknum Golkar yang sebelumnya setia kepada Soeharto mendesak Presiden untuk menganggap dirinya bertanggung jawab atas kegiatannya melalui rapat khusus MPR. Presiden Soeharto akhirnya memutuskan hengkang pada 21 Mei 1998, dan posisinya digantikan oleh B.J. Habibie(Aryantoro D, et al 2023).</p>
+                    <img src="WhatsApp Image 2025-10-05 at 08.53.52_2cb3b447.jpg" class="img-fluid rounded mb-3" alt="Soeharto Mundur">
+                    <p><strong>Dampak:</strong> Akhir era otoriter, awal reformasi politik, ekonomi, dan sosial di Indonesia.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <a href="#" class="btn btn-success">Baca Sumber Resmi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Reformasi Politik -->
+    <div class="modal fade" id="detailModalReformasi" tabindex="-1" aria-labelledby="detailModalReformasiLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="detailModalReformasiLabel"><i class="bi bi-gear me-2"></i>Reformasi Politik</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Peristiwa yang terjadi sebelum amandemen pertama ialah peristiwa reformasi. Pada reformasi 1998, isu yang sangat santer di bincangkan adalah adanya rezim Soeharto yang berkuasa terlalu lama. Salah satu  akibat yang dituntut dari reformasi 1998 adalah amandemen UUD 1945. Amandemen terjadi karena sebab-sebab tertentu yang menyebabkan perubahan tersebut perlu dilakukan. Sebagai contoh saat Reformasi 1998, keadaan di Indonesia sudah kacau balau dari sisi ekonomi (krisis moneter) dan dari sisi lainnya yang terlihat dari penjarahan, pembakaran dll. Amandemen yang dilakukan tentu saja tidak mengubah namun memperbaiki agar lebih baik dan tidak multi tafsir (Pertama A, 2004).Pelaksanaan pemilu 1999 sebagai pemilu anti tesis pemilu-pemilu pada masa orde baru. Hal ini nampak dari berbagai hal, pertama pemilu 1999 terjadi liberalisasi politik yang melahirkan 48 partai politik. Jika dibandingkan dengan pemilu orde baru khususnya pemilu 1997 hanya terdiri 3 peserta pemilu. Kedua, pemilu 1999 berusaha dibangun atas luberjurdil dibanding pemilu pada masa orde baru hanya mengedepankan pelaksanaaan pemilu luber saja dengan mengabaikan prinsip jurdil. Pemilu 1999 mewujudkan adanya netralitas birokrasi. Terdapat perbedaan yang sangat mendasar dalam pelaksanaan pemilu 1999 di bandingkan dengan pemilu pada masa orde baru (Palenewen J.D.O, et al, 2022).Konsep Dwifungsi ABRI sangat terkait dengan kelahiran dan peran angkatan bersenjata Republik Indonesia selama periode revolusioner dari bulan Agustus 1945 sampai Desember 1949. Konsep Dwifungsi juga berhubungan dengan pengalaman ABRI dan menjadi aktualisasi di masa depan. Ketika Sukarno mendirikan Dewan Perwakilan Rakyat Gotong Royong pada tahun 1960, 35 dari 283 anggotanya adalah ABRI. Setelah ini, Nasution untuk pertama kali menggunakan istilah “Dwifungsi”. Dwifungsi di era Orde Baru ini mengacu pada penggabungan fungsi umum ABRI sebagai kekuatan pertahanan dan fungsi kekaryaan ABRI. Dwifungsi sendiri begitu mengakar pada era Soeharto. Namun setelah Soeharto lengser, situasi politik berubah. Peran TNI dalam politik Indonesia mulai dipertanyakan dan digugat melalui reformasi 1998. Salah satu tuntutan keras yang disuarakan kelompok pro-demokrasi adalah pencabutan Dwifungsi ABRI. Dan terpilihnya Abdurahman Wahid (Gus Dur) sebagai presiden membuat tuntutan itu cepat dikabulkan lewat sejumlah keputusan. Dalam masajabatannya yang sangat pendek (1999-2001), pemerintahan Gus Dur melakukan sejumlah reformasi TNI. Dan pada akhirnya Polri dipisahkan dari TNI (Azwar A, et al 2021).</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Kebebasan pers dan ekspresi.</li>
+                        <li class="list-group-item">Desentralisasi kekuasaan ke daerah (otonomi).</li>
+                        <li class="list-group-item">Pembentukan KPK untuk pemberantasan korupsi.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <a href="#" class="btn btn-success">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Monumen Trisakti -->
+    <div class="modal fade" id="detailModalMonumen" tabindex="-1" aria-labelledby="detailModalMonumenLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="detailModalMonumenLabel"><i class="bi bi-building me-2"></i>Monumen Trisakti</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Kejadian Mei 1998 sudah 15 tahun berlalu. Berjalannya waktu ternyata tidak membuat orang lupa dengan kejadian yang memakan banyak korban tersebut. Kenyataan ini membuat banyak orang meluapkan opini mereka tentang Mei 1998 yang sampai saat ini masih dipertanyakan kebenarannya. Ketidakjelasan dalang dibalik kejadian Mei 1998 ini membuat masyarakat terutama keluarga korban masih tidak dapat menerima dan terus menuntut ditegakkannya keadilan bahkan sampai setelah 15 tahun kejadian tersebut berlalu. Terlepas dari semua hal mengenai kejadian Mei 1998, terdapat realita dimana Museum Tragedi Mei 1998 ini layak menjadi sorotan. Adanya semua hal yang melatarbelakangi proyek Museum Tragedi Mei 1998 ditarik dalam sebuah topik dimana museum akan dikemas untuk menceritakan kejadian Mei 1998 sebagai bukti perjuangan menuju Reformasi. Kejadian Mei 1998 seperti yang selama ini kita ketahui meledak setelah kejadian penembakanmahasiswa Trisakti. Kota Jakarta pun menjadi kota dengan kerusuhan terparah dan korban terbanyak sehingga tapak untuk pembangunan proyek Museum Tragedi Mei 1998 dipilih di Jakarta. Dalam perancangan Museum Tragedi Mei 1998 di Jakarta ini adalah bagaimana menghadirkan sebuah museum yang dapat mengajak pengunjung mengenang kejadian Mei 1998 sebagai perjuangan menuju perubahan. Pengunjung juga diajak untuk dapat turut berempati terhadap kejadian Mei 1998. Museum Tragedi Mei 1998 merupakan sebuah fasilitas yang didesain menggunakan pendekatan semiotika dengan tujuan dapat menceritakan kembali mengenai kejadian Mei 1998 melalui sisi arsitekturalnya. Fasilitas museum ini mewadahi kegiatan pengunjung untuk mengenang Mei 1998 sebagai sebuah kejadian dimana masyarakat berjuang bersama-sama meraih kebebasan (Julianti J 2014).</p>
+                    <img src="WhatsApp Image 2025-10-05 at 09.45.52_2de57631.jpg" class="img-fluid rounded mb-3" alt="Monumen Trisakti">
+                    <p><strong>Simbolisme:</strong> Monumen ini melambangkan semangat perlawanan terhadap ketidakadilan dan pentingnya peran pemuda dalam sejarah bangsa.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <a href="#" class="btn btn-success">Kunjungi Lokasi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Pelajaran Demokrasi -->
+    <div class="modal fade" id="detailModalPelajaran" tabindex="-1" aria-labelledby="detailModalPelajaranLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="detailModalPelajaranLabel"><i class="bi bi-lightbulb me-2"></i>Pelajaran untuk Generasi Muda</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Tragedi Trisakti mengajarkan nilai-nilai hak asasi manusia, keberanian mahasiswa sebagai agen perubahan, dan pentingnya menjaga demokrasi dari ancaman korupsi, nepotisme, dan kolusi (KKN). Generasi muda diajak untuk belajar dari sejarah agar tidak terulang.</p>
+                    <blockquote class="blockquote text-success">
+                        <p>"Demokrasi bukan warisan, tapi tanggung jawab kita untuk dijaga."</p>
+                        <footer class="blockquote-footer">Quote Inspiratif Reformasi</footer>
+                    </blockquote>
+                    <p><strong>Aksi Nyata:</strong> Ikut serta dalam pemilu, advokasi HAM, dan edukasi sejarah.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <a href="#" class="btn btn-success">Bagikan Kisah Ini</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer 
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-warning"><i class="bi bi-book me-2"></i>Tragedi Trisakti 1998</h5>
+                    <p class="text-light opacity-75">Situs ini didedikasikan untuk mengenang perjuangan mahasiswa Trisakti yang memicu Reformasi 1998, membentuk demokrasi Indonesia modern.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-warning">Navigasi</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Beranda</a></li>
+                        <li><a href="background.html" class="text-light text-decoration-none">Latar Belakang</a></li>
+                        <li><a href="chronology.html" class="text-light text-decoration-none">Kronologi</a></li>
+                        <li><a href="victims.html" class="text-light text-decoration-none">Korban</a></li>
+                        <li><a href="legacy.html" class="text-light text-decoration-none">Warisan</a></li>
+                        <li><a href="gallery.html" class="text-light text-decoration-none">Galeri</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-warning">Hubungi Kami</h5>
+                    <p class="text-light opacity-75">Ikuti update sejarah Reformasi di media sosial kami.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3" title="Facebook"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-light me-3" title="Twitter"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-light me-3" title="Instagram"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-light" title="YouTube"><i class="bi bi-youtube fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 opacity-25">
+            <div class="text-center">
+                <p class="text-light mb-0">&copy; 2024 Tragedi Trisakti 1998. Dibuat dengan ❤️ untuk mengenang sejarah bangsa. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>-->
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" onclick="scrollToTop()" title="Kembali ke Atas">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Back to Top Functionality
+        window.onscroll = function() {
+            const backToTop = document.querySelector('.back-to-top');
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        };
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        // Fade-in on scroll (optional enhancement)
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Search functionality (placeholder)
+        document.querySelector('form[role="search"]').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const query = this.querySelector('input[type="search"]').value;
+            alert(`Mencari: "${query}" - Fitur pencarian akan segera hadir!`);
+        });
+    </script>
+</body>
+</html>

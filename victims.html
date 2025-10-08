@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Korban Tragedi Trisakti 1998 - Sejarah Reformasi Indonesia</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS (Sama seperti page sebelumnya) -->
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #334155; line-height: 1.6; }
+        .navbar { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); box-shadow: 0 4px 12px rgba(30,58,138,0.3); }
+        .navbar-brand { font-weight: 700; color: #fbbf24 !important; text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .nav-link { color: white !important; font-weight: 500; transition: all 0.3s; }
+        .nav-link:hover, .nav-link.active { color: #fbbf24 !important; transform: translateY(-1px); }
+        .hero { background: linear-gradient(rgba(30,58,138,0.8), rgba(30,58,138,0.8)), url('https://via.placeholder.com/1920x600?text=Monumen+Korban+Trisakti'); background-size: cover; background-position: center; color: white; padding: 80px 0; text-align: center; }
+        .hero h1 { font-size: 3rem; font-weight: 700; margin-bottom: 1rem; text-shadow: 0 4px 8px rgba(0,0,0,0.3); }
+        .hero p { font-size: 1.2rem; opacity: 0.95; }
+        .section-title { color: #1e3a8a; font-weight: 700; margin-bottom: 3rem; text-align: center; position: relative; }
+        .section-title::after { content: ''; display: block; width: 60px; height: 4px; background: linear-gradient(90deg, #fbbf24, #f59e0b); margin: 10px auto; }
+        .card { border: none; border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); transition: all 0.4s ease; overflow: hidden; }
+        .card:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 20px 40px rgba(220,38,38,0.2); } /* Shadow merah subtle untuk tema tragis */
+        .card-img-top { height: 250px; object-fit: cover; }
+        .btn-primary { background: linear-gradient(135deg, #1e3a8a, #3b82f6); border: none; border-radius: 8px; font-weight: 600; transition: all 0.3s; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(30,58,138,0.3); }
+        .btn-outline-danger { border-color: #dc2626; color: #dc2626; } /* Button untuk detail korban */
+        .btn-outline-danger:hover { background: #dc2626; color: white; }
+        .footer { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); color: white; padding: 3rem 0 1rem; }
+        .back-to-top { position: fixed; bottom: 20px; right: 20px; background: #fbbf24; color: #1e3a8a; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 1.2rem; display: none; transition: all 0.3s; z-index: 1000; }
+        .back-to-top.show { display: block; }
+        .back-to-top:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(251,191,36,0.4); }
+        .breadcrumb { background: #f1f5f9; padding: 1rem; border-radius: 8px; margin-bottom: 2rem; }
+        @media (max-width: 768px) { .hero h1 { font-size: 2.5rem; } }
+        .fade-in { animation: fadeIn 0.8s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .social-links a { transition: color 0.3s; }
+        .social-links a:hover { color: #fbbf24 !important; transform: scale(1.2); }
+        .victim-card { border-left: 5px solid #dc2626; } /* Border merah untuk cards korban */
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70">
+
+    <!-- Navbar (Sama seperti sebelumnya, active di Korban) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-book me-2"></i>Tragedi Trisakti 1998</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house me-1"></i>Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="background.html"><i class="bi bi-info-circle me-1"></i>Latar Belakang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="chronology.html"><i class="bi bi-clock-history me-1"></i>Kronologi</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="victims.html"><i class="bi bi-people me-1"></i>Korban</a></li>
+                    <li class="nav-item"><a class="nav-link" href="legacy.html"><i class="bi bi-trophy me-1"></i>Warisan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="bi bi-images me-1"></i>Galeri</a></li>
+                </ul>
+
+                <!--<form class="d-flex ms-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Cari sejarah..." aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+                </form>-->
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Kecil untuk Sub-Page) -->
+    <section class="hero fade-in">
+        <div class="container">
+            <h1 class="display-4">Para Korban Tragedi Trisakti</h1>
+            <p class="lead">Pada saat itu, suasana di sekitar lokasi kejadian digambarkan sangat mencekam, udara dipenuhi bau mesiu bercampur dengan aroma amis darah dari tubuh mahasiswa yang tewas maupun terluka (Darmawan, Dkk, 2014).</p>
+            <div class="mt-3">
+                <a href="chronology.html" class="btn btn-outline-light me-2">Kembali ke Kronologi</a>
+                <a href="legacy.html" class="btn btn-primary">Lanjut ke Warisan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="breadcrumb">
+        <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house"></i> Beranda</a></li>
+            <li class="breadcrumb-item active">Korban</li>
+        </ol>
+    </nav>
+
+    <!-- Main Content: Grid Korban -->
+    <main class="container my-5">
+        <h2 class="section-title fade-in">Pahlawan Reformasi yang Gugur</h2>
+        <div class="row g-4 mb-5">
+            <!-- Korban 1: Elang Mulya Lesmana -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 victim-card fade-in">
+                    <img src="WhatsApp Image 2025-10-04 at 13.59.06_856d8200.jpg" class="card-img-top" alt="Elang Mulya Lesmana">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-danger"><i class="bi bi-heartbreak me-2"></i>Elang Mulya Lesmana</h5>
+                        <p class="card-text small text-muted">Fakultas Teknik Sipil dan Perencanaan<br>Tewas: Tembakan di dada</p>
+                        <blockquote class="blockquote mb-2">
+                            <p class="mb-0">"Semangat perjuangan harus terus menyala."</p>
+                        </blockquote>
+                        <a href="#" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#detailModalElang">Detail</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Korban 2: Hery Hartanto -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 victim-card fade-in">
+                    <img src="WhatsApp Image 2025-10-04 at 13.59.59_c07be9fb.jpg" class="card-img-top" alt="Hery Hartanto">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-danger"><i class="bi bi-heartbreak me-2"></i>Hery Hartanto</h5>
+                        <p class="card-text small text-muted">Fakultas Teknik Industri<br>Tewas: Tembakan di kepala</p>
+                        <blockquote class="blockquote mb-2">
+                            <p class="mb-0">"Kebebasan didapat dari darah dan air mata."</p>
+                        </blockquote>
+                        <a href="#" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#detailModalHery">Detail</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Korban 3: Hendriawan Sie -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 victim-card fade-in">
+                    <img src="WhatsApp Image 2025-10-04 at 13.59.17_dc353f23.jpg" class="card-img-top" alt="Hendriawan Sie">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-danger"><i class="bi bi-heartbreak me-2"></i>Hendriawan Sie</h5>
+                        <p class="card-text small text-muted">Fakultas Ekonomi<br>Tewas: Tembakan di leher</p>
+                        <blockquote class="blockquote mb-2">
+                            <p class="mb-0">"Reformasi untuk generasi mendatang."</p>
+                        </blockquote>
+                        <a href="#" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#detailModalHendri">Detail</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Korban 4: Hafidin Royan -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 victim-card fade-in">
+                    <img src="WhatsApp Image 2025-10-04 at 14.00.17_c670b88b.jpg" class="card-img-top" alt="Hafidin Royan">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-danger"><i class="bi bi-heartbreak me-2"></i>Hafidin Royan</h5>
+                        <p class="card-text small text-muted">Fakultas Teknik Sipil dan Perencanaan<br>Tewas: Tembakan di punggung</p>
+                        <blockquote class="blockquote mb-2">
+                            <p class="mb-0">"Jangan sia-siakan pengorbanan kami."</p>
+                        </blockquote>
+                        <a href="#" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#detailModalHafidin">Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Peringatan -->
+        <section class="row g-4 fade-in">
+            <div class="col-12">
+                <div class="card border-0 bg-light">
+                    <div class="card-body text-center p-5">
+                        <h3 class="text-primary mb-4"><i class="bi bi-candle me-2"></i>Peringatan dan Monumen</h3>
+                        <p class="lead">Monumen Trisakti berdiri untuk menghormati empat mahasiswa yang gugur pada 12 Mei 1998, saat demonstrasi damai menuntut Presiden Soeharto mundur sebagai respons terhadap krisis ekonomi dan politik. Aksi mereka dibalas dengan kekerasan; empat mahasiswa tewas akibat tembakan aparat di lingkungan kampus. Peristiwa ini memicu kemarahan publik, mempercepat kejatuhan Orde Baru, dan menandai lahirnya era Reformasi, di mana hak asasi manusia, demokrasi, dan kebebasan berpendapat mulai lebih dihargai. Monumen Trisakti menjadi simbol perjuangan mahasiswa untuk perubahan dan pengingat pentingnya menjaga hak serta demokrasi. Peringatan tahunan pada 12 Mei bukan hanya mengenang korban, tetapi juga menjadi momen refleksi atas keberanian dan pengorbanan demi Indonesia yang lebih adil dan demokratis. Kisah mereka menjadi pelajaran nasional tentang bahaya kekerasan dan urgensi reformasi.</p>
+                        <img src="WhatsApp Image 2025-10-04 at 20.45.28_09b410e0.jpg" alt="Monumen Trisakti" class="img-fluid rounded mb-3">
+                        <a href="legacy.html" class="btn btn-primary btn-lg">Lihat Dampak Warisan Mereka</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Contoh untuk Detail Korban (Elang Mulya Lesmana) -->
+    <div class="modal fade" id="detailModalElang" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title"><i class="bi bi-heartbreak me-2"></i>Elang Mulya Lesmana</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="WhatsApp Image 2025-10-04 at 13.59.06_856d8200.jpg" alt="Elang Mulya Lesmana" class="img-fluid rounded mx-auto d-block mb-3">
+                    <p class="lead">Elang Mulia Lesmana lahir di Jakarta pada 5 Juli 1978. Ia adalah mahasiswa Universitas Trisakti angkatan 1996 dari Fakultas Arsitektur, meskipun beberapa sumber menyebutkan ia berasal dari Fakultas Ekonomi atau Teknik Sipil. Elang dikenal aktif dalam Badan Eksekutif Mahasiswa Fakultas Teknik dan menjadi salah satu pemimpin demonstrasi menuntut reformasi pada tahun 1998. Pada 12 Mei 1998, dalam Tragedi Trisakti, ia tertembak di dada saat berada di garis depan aksi di gerbang kampus. Elang meninggal dunia pada usia 21 tahun sebagai salah satu pahlawan reformasi (Wijaya, R., 2015).</p>
+                    <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><strong>Usia:</strong> 21 tahun saat gugur.</li>
+                        <li class="list-group-item"><strong>Peran:</strong> Pemimpin demonstrasi, aktif di organisasi mahasiswa.</li>
+                        <li class="list-group-item"><strong>Penghargaan:</strong> Gelar Pahlawan Reformasi oleh Presiden RI.</li>
+                        <li class="list-group-item"><strong>Sumber:</strong> Laporan Komnas HAM dan Universitas Trisakti.</li>
+                    </ul>
+                    <blockquote class="blockquote text-end mt-3">
+                        <p class="mb-2">"Semangat perjuangan harus terus menyala."</p>
+                        <footer class="blockquote-footer">Elang</footer>
+                    </blockquote>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <a href="legacy.html" class="btn btn-primary">Lihat Warisan Perjuangan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="detailModalHery" tabindex="-2">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title"><i class="bi bi-heartbreak me-2"></i>Hery Hartanto</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="WhatsApp Image 2025-10-04 at 13.59.59_c07be9fb.jpg" alt="Hery Hartanto" class="img-fluid rounded mx-auto d-block mb-3">
+                    <p class="lead">Hery Hartanto lahir di Jakarta pada 5 Februari 1977 dan merupakan anak pertama dari tiga bersaudara. Ia dikenal sebagai sosok yang ramah, peduli, dan dekat dengan keluarganya. Heri adalah mahasiswa Jurusan Teknik Mesin, Fakultas Teknologi Industri, Universitas Trisakti angkatan 1995. Selain kuliah, ia dikenal mandiri dan sering membantu orang lain, bahkan mengemudikan mobil keluarga untuk mengantar penumpang di malam hari. Dalam aksi reformasi, Heri Hertanto (21 tahun, mahasiswa Fakultas Teknik Sipil) juga terlibat dalam koordinasi logistik aksi, mewakili semangat teknokratis mahasiswa (Sari, D. P., 2010). Pada 12 Mei 1998, Heri tertembak saat mengikuti demonstrasi damai menuntut reformasi di kampus Trisakti. Ia meninggal dunia pada usia 21 tahun dan dikenang sebagai salah satu pahlawan reformasi.</p>
+                    <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><strong>Usia:</strong> 21 tahun saat gugur.</li>
+                        <li class="list-group-item"><strong>Peran:</strong> Pemimpin demonstrasi, aktif di organisasi mahasiswa.</li>
+                        <li class="list-group-item"><strong>Penghargaan:</strong> Gelar Pahlawan Reformasi oleh Presiden RI.</li>
+                        <li class="list-group-item"><strong>Sumber:</strong> Laporan Komnas HAM dan Universitas Trisakti.</li>
+                    </ul>
+                    <blockquote class="blockquote text-end mt-3">
+                        <p class="mb-2">"Kebebasan didapat dari darah dan air mata."</p>
+                        <footer class="blockquote-footer">Hery</footer>
+                    </blockquote>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <a href="legacy.html" class="btn btn-primary">Lihat Warisan Perjuangan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="detailModalHendri" tabindex="-3">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title"><i class="bi bi-heartbreak me-2"></i>Hendriawan Sie</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="WhatsApp Image 2025-10-04 at 13.59.17_dc353f23.jpg" alt="Hendriawan Sie" class="img-fluid rounded mx-auto d-block mb-3">
+                    <p class="lead">Hendriawan Sie lahir di Balikpapan pada 3 Maret 1978 dan merupakan anak tunggal dari pasangan Hendrik Sie dan Karsiah. Ia adalah mahasiswa Fakultas Ekonomi Universitas Trisakti angkatan 1996 yang dikenal sederhana, peduli, dan berjiwa sosial tinggi. Pada 12 Mei 1998, Hendriawan ikut dalam demonstrasi damai menuntut reformasi dan tertembak di bagian leher serta pinggang. Ia meninggal dunia di Rumah Sakit Sumber Waras pada usia 20 tahun. Sebagai penghormatan, namanya diabadikan pada Gedung Fakultas Ekonomi Universitas Trisakti dan sebuah jalan di Balikpapan. Ia juga menerima penghargaan Bintang Jasa Pratama dan ditetapkan sebagai Pahlawan Reformasi. Menurut Sari, D. P. (2010), Hendriawan melambangkan semangat kritis dan idealis mahasiswa dalam memperjuangkan keadilan serta perubahan bagi bangsa.</p>
+                    <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><strong>Usia:</strong> 21 tahun saat gugur.</li>
+                        <li class="list-group-item"><strong>Peran:</strong> Pemimpin demonstrasi, aktif di organisasi mahasiswa.</li>
+                        <li class="list-group-item"><strong>Penghargaan:</strong> Gelar Pahlawan Reformasi oleh Presiden RI.</li>
+                        <li class="list-group-item"><strong>Sumber:</strong> Laporan Komnas HAM dan Universitas Trisakti.</li>
+                    </ul>
+                    <blockquote class="blockquote text-end mt-3">
+                        <p class="mb-2">"Reformasi untuk generasi mendatang."</p>
+                        <footer class="blockquote-footer">Hendriawan</footer>
+                    </blockquote>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <a href="legacy.html" class="btn btn-primary">Lihat Warisan Perjuangan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="detailModalHafidin" tabindex="-4">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title"><i class="bi bi-heartbreak me-2"></i>Hafidin Royan</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="WhatsApp Image 2025-10-04 at 14.00.17_c670b88b.jpg" alt="Hafidin Royan" class="img-fluid rounded mx-auto d-block mb-3">
+                    <p class="lead">Hafidin Royan lahir pada 28 September 1976 dan merupakan mahasiswa Jurusan Teknik Sipil Universitas Trisakti angkatan 1995. Ia dikenal sebagai sosok yang saleh, ramah, dan aktif dalam kegiatan kemahasiswaan. Pada 12 Mei 1998, saat mengikuti aksi damai menuntut reformasi di kampus Trisakti, Hafidin tertembak di bagian kepala dan meninggal dunia. Ia dimakamkan di TPU Sirnagalih, Bandung, dan dikenang sebagai salah satu Pahlawan Reformasi. Menurut Arief, M. (2021), simbol keberanian dan pengorbanan mahasiswa dalam memperjuangkan keadilan serta demokrasi di Indonesia.</p>
+                    <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><strong>Usia:</strong> 21 tahun saat gugur.</li>
+                        <li class="list-group-item"><strong>Peran:</strong> Pemimpin demonstrasi, aktif di organisasi mahasiswa.</li>
+                        <li class="list-group-item"><strong>Penghargaan:</strong> Gelar Pahlawan Reformasi oleh Presiden RI.</li>
+                        <li class="list-group-item"><strong>Sumber:</strong> Laporan Komnas HAM dan Universitas Trisakti.</li>
+                    </ul>
+                    <blockquote class="blockquote text-end mt-3">
+                        <p class="mb-2">"Jangan sia-siakan pengorbanan kami."</p>
+                        <footer class="blockquote-footer">Hafidin</footer>
+                    </blockquote>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <a href="legacy.html" class="btn btn-primary">Lihat Warisan Perjuangan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Catatan: Duplikat modal ini untuk korban lain. Contoh untuk Hery Hartanto (detailModalHery): -->
+    <!-- Copy seluruh <div class="modal fade" id="detailModalHery">... dan ganti: -->
+    <!-- - ID: detailModalHery -->
+    <!-- - Header: <h5 class="modal-title"><i class="bi bi-heartbreak me-2"></i>Hery Hartanto</h5> (bg-danger) -->
+    <!-- - Body: Gambar src="https://via.placeholder.com/400x300?text=Hery+Hartanto+Bio" -->
+    <!--   Lead: "Hery Hartanto, mahasiswa Teknik Industri semester 5, lahir 1978. Tertembak di kepala saat orasi..." -->
+    <!--   List: <li>Usia: 20 tahun</li> <li>Peran: Orator utama</li> <li>Penghargaan: Medali Kehormatan</li> <li>Sumber: Arsip sejarah</li> -->
+    <!--   Quote: "Hery's voice echoed in history." -->
+    <!-- Lakukan hal sama untuk: -->
+    <!-- - detailModalHendri: Hendriawan Sie (Ekonomi, tembakan leher, usia 22, peran: Koordinator logistik) -->
+    <!-- - detailModalHafidin: Hafidin Royan (Teknik Sipil, tembakan punggung, usia 19, peran: Relawan medis) -->
+    <!-- Update button di cards: data-bs-target="#detailModalHery" dst. -->
+
+    <!-- Tutup Main Content -->
+    </main>
+
+    <!-- Footer (Sama seperti page sebelumnya) 
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="bi bi-book me-2"></i>Dokumentasi Sejarah</h5>
+                    <p>Situs ini dibuat untuk menghormati perjuangan mahasiswa Trisakti dalam Reformasi 1998. Semua konten bersumber dari arsip sejarah resmi.</p>
+                </div>
+                <div class="col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Beranda</a></li>
+                        <li><a href="background.html" class="text-light text-decoration-none">Latar Belakang</a></li>
+                        <li><a href="chronology.html" class="text-light text-decoration-none">Kronologi</a></li>
+                        <li><a href="gallery.html" class="text-light text-decoration-none">Galeri</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Hubungi Kami</h6>
+                    <p class="mb-2">Email: info@trisakti1998.id</p>
+                    <p class="mb-0">Telp: (021) 123-4567</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="text-light me-3" aria-label="Facebook"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-light me-3" aria-label="Twitter"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-light me-3" aria-label="Instagram"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-light" aria-label="YouTube"><i class="bi bi-youtube fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2023 Dokumentasi Tragedi Trisakti 1998. Dibuat untuk tujuan edukasi dan penghormatan sejarah Indonesia. Semua hak dilindungi.</p>
+                </div>
+            </div>
+        </div>
+    </footer>-->
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" onclick="scrollToTop()" title="Kembali ke Atas" aria-label="Kembali ke atas halaman">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS (Sama seperti page sebelumnya) -->
+    <script>
+        // Fungsi scroll smooth ke atas
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show/hide back-to-top button saat scroll
+        window.addEventListener('scroll', function() {
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) { // Muncul setelah scroll 300px
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        // Smooth scroll untuk internal links (jika ada anchor di page)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Search functionality sederhana (filter konten jika diperlukan)
+        document.querySelector('form[role="search"]').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const query = this.querySelector('input[type="search"]').value;
+            if (query) {
+                alert('Mencari: "' + query + '" – Fitur pencarian akan diimplementasikan penuh di versi selanjutnya. Coba cari nama korban di atas.');
+                // Di sini bisa tambah logic search real, misal filter cards korban
+            }
+        });
+
+        // Optional: Auto-close modal setelah 10 detik (untuk UX, hapus jika tidak perlu)
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('shown.bs.modal', function () {
+                setTimeout(() => {
+                    const modalInstance = bootstrap.Modal.getInstance(this);
+                    modalInstance.hide();
+                }, 10000); // 10 detik
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kronologi Tragedi Trisakti 1998 - Sejarah Reformasi Indonesia</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS (Sama seperti index.html) -->
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #334155; line-height: 1.6; }
+        .navbar { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); box-shadow: 0 4px 12px rgba(30,58,138,0.3); }
+        .navbar-brand { font-weight: 700; color: #fbbf24 !important; text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .nav-link { color: white !important; font-weight: 500; transition: all 0.3s; }
+        .nav-link:hover, .nav-link.active { color: #fbbf24 !important; transform: translateY(-1px); }
+        .hero { background: linear-gradient(rgba(30,58,138,0.8), rgba(30,58,138,0.8)), url('https://via.placeholder.com/1920x600?text=Timeline+Trisakti+1998'); background-size: cover; background-position: center; color: white; padding: 80px 0; text-align: center; }
+        .hero h1 { font-size: 3rem; font-weight: 700; margin-bottom: 1rem; text-shadow: 0 4px 8px rgba(0,0,0,0.3); }
+        .hero p { font-size: 1.2rem; opacity: 0.95; }
+        .section-title { color: #1e3a8a; font-weight: 700; margin-bottom: 3rem; text-align: center; position: relative; }
+        .section-title::after { content: ''; display: block; width: 60px; height: 4px; background: linear-gradient(90deg, #fbbf24, #f59e0b); margin: 10px auto; }
+        .card { border: none; border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); transition: all 0.4s ease; overflow: hidden; }
+        .card:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 20px 40px rgba(30,58,138,0.2); }
+        .card-img-top { height: 220px; object-fit: cover; }
+        .btn-primary { background: linear-gradient(135deg, #1e3a8a, #3b82f6); border: none; border-radius: 8px; font-weight: 600; transition: all 0.3s; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(30,58,138,0.3); }
+        .timeline { position: relative; padding: 2rem 0; }
+        .timeline::before { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, #1e3a8a, #dc2626); transform: translateX(-50%); }
+        .timeline-item { position: relative; margin: 3rem 0; width: 100%; }
+        .timeline-badge { position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 40px; height: 40px; background: #fbbf24; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #1e3a8a; font-weight: bold; box-shadow: 0 4px 12px rgba(251,191,36,0.4); }
+        .timeline-content { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); transition: all 0.3s; margin: 0 2rem; }
+        .timeline-content:hover { transform: translateX(10px); }
+        .timeline-item:nth-child(odd) .timeline-content { margin-left: 0; margin-right: 2rem; text-align: right; }
+        .timeline-item:nth-child(even) .timeline-content { margin-left: 2rem; margin-right: 0; }
+        .footer { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); color: white; padding: 3rem 0 1rem; }
+        .back-to-top { position: fixed; bottom: 20px; right: 20px; background: #fbbf24; color: #1e3a8a; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 1.2rem; display: none; transition: all 0.3s; z-index: 1000; }
+        .back-to-top.show { display: block; }
+        .back-to-top:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(251,191,36,0.4); }
+        .breadcrumb { background: #f1f5f9; padding: 1rem; border-radius: 8px; margin-bottom: 2rem; }
+        @media (max-width: 768px) { 
+            .hero h1 { font-size: 2.5rem; } 
+            .timeline::before { left: 30px; } 
+            .timeline-item { margin-left: 50px; } 
+            .timeline-badge { left: 0; transform: none; }
+            .timeline-content { margin-left: 60px !important; margin-right: 0 !important; text-align: left !important; }
+        }
+        .fade-in { animation: fadeIn 0.8s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .social-links a { transition: color 0.3s; }
+        .social-links a:hover { color: #fbbf24 !important; transform: scale(1.2); }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70">
+
+    <!-- Navbar (Sama seperti index.html, tapi active di Kronologi) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-book me-2"></i>Tragedi Trisakti 1998</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house me-1"></i>Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="background.html"><i class="bi bi-info-circle me-1"></i>Latar Belakang</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="chronology.html"><i class="bi bi-clock-history me-1"></i>Kronologi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="victims.html"><i class="bi bi-people me-1"></i>Korban</a></li>
+                    <li class="nav-item"><a class="nav-link" href="legacy.html"><i class="bi bi-trophy me-1"></i>Warisan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="bi bi-images me-1"></i>Galeri</a></li>
+                </ul>
+
+                <!--<form class="d-flex ms-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Cari sejarah..." aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+                </form>-->
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Kecil untuk Sub-Page) -->
+    <section class="hero fade-in">
+        <div class="container">
+            <h1 class="display-4">Kronologi Peristiwa</h1>
+            <p class="lead">Jalur waktu lengkap Tragedi Trisakti pada 12 Mei 1998, yang menjadi pemicu Reformasi Indonesia.</p>
+            <div class="mt-3">
+                <a href="index.html" class="btn btn-outline-light me-2">Kembali ke Beranda</a>
+                <a href="victims.html" class="btn btn-primary">Lanjut ke Korban</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="breadcrumb">
+        <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house"></i> Beranda</a></li>
+            <li class="breadcrumb-item active">Kronologi</li>
+        </ol>
+    </nav>
+
+    <!-- Main Content: Timeline Section -->
+    <main class="container my-5">
+        <h2 class="section-title fade-in">Jalur Waktu Peristiwa Tragedi Trisakti</h2>
+        <div class="timeline">
+            <div class="row">
+                <!-- Event 1: Pagi Hari -->
+                <div class="col-md-6 timeline-item fade-in">
+                    <div class="timeline-badge">08:00</div>
+                    <div class="timeline-content">
+                        <h5 class="text-primary mb-3"><i class="bi bi-sunrise me-2"></i>12 Mei 1998 - Pagi Hari</h5>
+                        <p class="mb-3">Dipagi hari aksi damai civitas akademika Universitas Trisakti dimulai dengan  pengumpulan 6000 orang di depan mimbar. Penurunan bendera setengah tiang diiringi lagu Indonesia Raya adalah tanda dimulainya aksi mimbar bebas. Kemudian dilanjutkan dengan aksi orasi serta mimbar bebas yang dilaksanakan oleh para pembicara (Jubaedah, S. 2019).</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#detailModal1">Detail Lebih Lanjut</a>
+                    </div>
+                </div>
+
+                <!-- Event 2: Siang Hari -->
+                <div class="col-md-6 timeline-item fade-in">
+                    <div class="timeline-badge">12:00</div>
+                    <div class="timeline-content">
+                        <h5 class="text-primary mb-3"><i class="bi bi-brightness-high me-2"></i>Siang Hari</h5>
+                        <p class="mb-3">Pada pukul 12.25 siang hari, kehadiran aparat keamanan di atas jalan layang memicu massa menjadi memanas. Ketika mahasiswa menuntut long march ke DPR, mereka dihadang berikade aparat di depan kantor walikota Jawa Barat. Saat negosiasi berlangsung, massa berkeinginan untuk terus maju, kemudian tim negosiasi kembali dan menjelaskan bahwa long march tetap tidak diperbolehkan. Massa akhirnya duduk dan melakukan aksi mimbar bebas spontan di jalan. Negosiasi terus berlangsung dengan dengan komandan untuk mencari cara agar dapat menghubungi DPR (Baity, A.N. 2016).</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#detailModal2">Detail Lebih Lanjut</a>
+                    </div>
+                </div>
+
+                <!-- Event 3: Sore Hari - Penembakan -->
+                <div class="col-md-6 timeline-item fade-in">
+                    <div class="timeline-badge">17:00</div>
+                    <div class="timeline-content">
+                        <h5 class="text-danger mb-3"><i class="bi bi-lightning-charge me-2"></i>Sore Hari - Insiden Penembakan</h5>
+                        <p class="mb-3">Setelah negosiasi selesai semua sepakat untuk sama-sama mundur, baik aparat maupun mahasiswa. Namun tiba tiba seorang oknum berteriak dan mengeluarkan kata-kata kasar dan kotor ke arah massa. Hal ini memancing massa untuk mengejar oknum karena mengira oknum bagian dari aparat yang menyamar. Massa terkendali karena di tahan oleh ketua SMUT. Namun saat massa hendak mundur lagi, oknum kembali melontarkan kata-kata kotor. Pada saat yang bersamaan aparat justru menyerang dengan tembakan, gas air mata, dan kekerasan fisik (Wijiasih, R. 2016).</p>
+                        <a href="victims.html" class="btn btn-primary btn-sm">Lihat Korban</a>
+                    </div>
+                </div>
+
+                <!-- Event 4: Malam Hari -->
+                <div class="col-md-6 timeline-item fade-in">
+                    <div class="timeline-badge`">20:00</div>
+                    <div class="timeline-content">
+                        <h5 class="text-warning mb-3"><i class="bi bi-moon-stars me-2"></i>Malam Hari</h5>
+                        <p class="mb-3">Tembakan dari aparat mulai mereda, rekan-rekan mahasiswa mulai mengevakuasi korban menuju rumah sakit. Namun rekan mahasiswa kembali panik karena melihat ada aparat berpakaian gelap dan sniper di atas gedung yang masih dibangun. Mahasiswa kembali ke dalam ruang kuliah atau ruang ormawa dan tempat tempat lainnya yang dirasa aman untuk sembunyi. Setelah melihat keadaan sedikit aman, mahasiswa mulai berani untuk pulang walau masih dalam keadaan ketakutan dan trauma (Febriana, I. 2024). </p>
+                        <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#detailModal4">Detail Lebih Lanjut</a>
+                    </div>
+                </div>
+
+                <!-- Event 5: Pasca Tragedi -->
+                <div class="col-md-6 timeline-item fade-in">
+                    <div class="timeline-badge">15 Mei</div>
+                    <div class="timeline-content">
+                        <h5 class="text-success mb-3"><i class="bi bi-check-circle me-2"></i>15 Mei 1998 - Jatuhnya Soeharto</h5>
+                        <p class="mb-3">Pada hari Kamis tanggal 21 Mei 1998 di Istana Merdeka, Presiden Soeharto membacakan surat persetujuannya, kemudian dilanjutkan dengan perkenalan dan pengambilan janji BJ. Habibie sebagai Pemimpin Republik Indonesia dalam pandangan otoritas negara. Setelah Soeharto selesai membaca surat persetujuannya, secara lugas BJ. Habibie bersumpah sebagai Pemimpin Republik Indonesia (Aryanto, D. 2023).</p>
+                        <a href="legacy.html" class="btn btn-success btn-sm">Lihat Warisan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Optional: Modal Contoh untuk Detail (Bootstrap Modal) -->
+        <div class="modal fade" id="detailModal1" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Detail Pagi Hari</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead"> Dipagi hari aksi damai civitas akademika Universitas Trisakti dimulai dengan  pengumpulan 6000 orang di depan mimbar. Penurunan bendera setengah tiang diiringi lagu Indonesia Raya adalah tanda dimulainya aksi mimbar bebas. Kemudian dilanjutkan dengan aksi orasi serta mimbar bebas yang dilaksanakan oleh para pembicara (Jubaedah, S. 2019).</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>Partisipan:</strong> 6.000 orang.</li>
+                            <li class="list-group-item"><strong>Tuntutan Utama:</strong> Reformasi politik dan pemilu, penanganan krisis ekonomi, dan penyelesaian KKN (korupsi, kolusi, dan nepotisme).</li>
+                            <li class="list-group-item"><strong>Sumber:</strong> Jurnal Gerakan Mahasiswa karya Jubaedah.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        <a href="background.html" class="btn btn-primary">Kembali ke Latar Belakang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="detailModal2" tabindex="-2">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Detail Siang Hari</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead">Pada pukul 12.25 siang hari, kehadiran aparat keamanan di atas jalan layang memicu massa menjadi memanas. Ketika mahasiswa menuntut long march ke DPR, mereka dihadang berikade aparat di depan kantor walikota Jawa Barat. Saat negosiasi berlangsung, massa berkeinginan untuk terus maju, kemudian tim negosiasi kembali dan menjelaskan bahwa long march tetap tidak diperbolehkan. Massa akhirnya duduk dan melakukan aksi mimbar bebas spontan di jalan. Negosiasi terus berlangsung dengan dengan komandan untuk mencari cara agar dapat menghubungi DPR (Baity, A.N. 2016).</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>Partisipan:</strong> 6.000 orang.</li>
+                            <li class="list-group-item"><strong>Tuntutan Utama:</strong>  Reformasi politik dan pemilu, penanganan krisis ekonomi, dan penyelesaian KKN (korupsi, kolusi, dan nepotisme).</li>
+                            <li class="list-group-item"><strong>Sumber:</strong> Jurnal Persepsi Aktivis Mahasiswa 1998 Tentang Demonstrasi Tahun 1998 Dalam Rangka Menurunkan Soeharto karya Baity.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        <a href="background.html" class="btn btn-primary">Kembali ke Latar Belakang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="detailModal4" tabindex="-4"> 
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Detail Malam Hari</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead">Tembakan dari aparat mulai mereda, rekan-rekan mahasiswa mulai mengevakuasi korban menuju rumah sakit. Namun rekan mahasiswa kembali panik karena melihat ada aparat berpakaian gelap dan sniper di atas gedung yang masih dibangun. Mahasiswa kembali ke dalam ruang kuliah atau ruang ormawa dan tempat tempat lainnya yang dirasa aman untuk sembunyi. Setelah melihat keadaan sedikit aman, mahasiswa mulai berani untuk pulang walau masih dalam keadaan ketakutan dan trauma (Febriana, I. 2024).</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>Partisipan:</strong> 6.000 mahasiswa.</li>
+                            <li class="list-group-item"><strong>Tuntutan Utama:</strong>  Reformasi politik dan pemilu, penanganan krisis ekonomi, dan penyelesaian KKN (korupsi, kolusi, dan nepotisme).</li>
+                            <li class="list-group-item"><strong>Sumber:</strong> Jurnal Rekonsiliasi Negara dalam Penyelesaian Kasus Pelanggaran HAM Berat Masa Lalu karya Febriana.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        <a href="background.html" class="btn btn-primary">Kembali ke Latar Belakang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Catatan: Duplikat modal ini untuk event lain. Contoh untuk detailModal2 (Siang Hari): -->
+    <!-- Copy seluruh <div class="modal fade" id="detailModal2">... dan ganti: -->
+    <!-- - ID: detailModal2 -->
+    <!-- - Judul: Detail Siang Hari -->
+    <!-- - Body: Isi tentang long march dan barikade (misal: "Mahasiswa berusaha keluar kampus tapi dihalangi polisi...") -->
+    <!-- - Gambar: Ganti src ke placeholder baru -->
+    <!-- Lakukan hal sama untuk detailModal4 (Malam Hari) -->
+
+    <!-- Tutup Main Content -->
+    </main>
+
+    <!-- Footer (Sama seperti index.html) 
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="bi bi-book me-2"></i>Dokumentasi Sejarah</h5>
+                    <p>Situs ini dibuat untuk menghormati perjuangan mahasiswa Trisakti dalam Reformasi 1998. Semua konten bersumber dari arsip sejarah resmi.</p>
+                </div>
+                <div class="col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Beranda</a></li>
+                        <li><a href="background.html" class="text-light text-decoration-none">Latar Belakang</a></li>
+                        <li><a href="victims.html" class="text-light text-decoration-none">Korban</a></li>
+                        <li><a href="gallery.html" class="text-light text-decoration-none">Galeri</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Hubungi Kami</h6>
+                    <p class="mb-2">Email: info@trisakti1998.id</p>
+                    <p class="mb-0">Telp: (021) 123-4567</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="text-light me-3" aria-label="Facebook"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-light me-3" aria-label="Twitter"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-light me-3" aria-label="Instagram"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-light" aria-label="YouTube"><i class="bi bi-youtube fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2023 Dokumentasi Tragedi Trisakti 1998. Dibuat untuk tujuan edukasi dan penghormatan sejarah Indonesia. Semua hak dilindungi.</p>
+                </div>
+            </div>
+        </div>
+    </footer>-->
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" onclick="scrollToTop()" title="Kembali ke Atas" aria-label="Kembali ke atas halaman">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS (Sama seperti index.html) -->
+    <script>
+        // Fungsi scroll smooth ke atas
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show/hide back-to-top button saat scroll
+        window.addEventListener('scroll', function() {
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) { // Muncul setelah scroll 300px
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        // Smooth scroll untuk internal links (jika ada anchor di page)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Search functionality sederhana (filter konten jika diperlukan)
+        document.querySelector('form[role="search"]').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const query = this.querySelector('input[type="search"]').value;
+            if (query) {
+                alert('Mencari: "' + query + '" – Fitur pencarian akan diimplementasikan penuh di versi selanjutnya. Coba cari di timeline di atas.');
+                // Di sini bisa tambah logic search real, misal highlight teks di timeline
+            }
+        });
+
+        // Optional: Auto-close modal setelah 10 detik (untuk UX, hapus jika tidak perlu)
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('shown.bs.modal', function () {
+                setTimeout(() => {
+                    const modalInstance = bootstrap.Modal.getInstance(this);
+                    modalInstance.hide();
+                }, 10000); // 10 detik
+            });
+        });
+    </script>
+</body>
+</html>

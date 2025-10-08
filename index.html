@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tragedi Trisakti 1998 - Sejarah Reformasi Indonesia</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #334155; line-height: 1.6; }
+        .navbar { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); box-shadow: 0 4px 12px rgba(30,58,138,0.3); }
+        .navbar-brand { font-weight: 700; color: #fbbf24 !important; text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .nav-link { color: white !important; font-weight: 500; transition: all 0.3s; }
+        .nav-link:hover, .nav-link.active { color: #fbbf24 !important; transform: translateY(-1px); }
+        .hero { background: linear-gradient(rgba(30,58,138,0.8), rgba(30,58,138,0.8)), url('https://via.placeholder.com/1920x800?text=Hero+Trisakti+1998'); background-size: cover; background-position: center; color: white; padding: 120px 0; text-align: center; }
+        .hero h1 { font-size: 4rem; font-weight: 700; margin-bottom: 1rem; text-shadow: 0 4px 8px rgba(0,0,0,0.3); }
+        .hero p { font-size: 1.3rem; opacity: 0.95; }
+        .section-title { color: #1e3a8a; font-weight: 700; margin-bottom: 3rem; text-align: center; position: relative; }
+        .section-title::after { content: ''; display: block; width: 60px; height: 4px; background: linear-gradient(90deg, #fbbf24, #f59e0b); margin: 10px auto; }
+        .card { border: none; border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); transition: all 0.4s ease; overflow: hidden; }
+        .card:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 20px 40px rgba(30,58,138,0.2); }
+        .card-img-top { height: 220px; object-fit: cover; }
+        .btn-primary { background: linear-gradient(135deg, #1e3a8a, #3b82f6); border: none; border-radius: 8px; font-weight: 600; transition: all 0.3s; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(30,58,138,0.3); }
+        .timeline { position: relative; padding: 2rem 0; }
+        .timeline::before { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, #1e3a8a, #dc2626); transform: translateX(-50%); }
+        .timeline-item { position: relative; margin: 3rem 0; }
+        .timeline-content { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); transition: all 0.3s; }
+        .timeline-content:hover { transform: translateX(10px); }
+        .timeline-item:nth-child(odd) .timeline-content { margin-left: 0; }
+        .timeline-item:nth-child(even) .timeline-content { margin-right: 0; }
+        .gallery-grid img { height: 250px; object-fit: cover; border-radius: 12px; transition: transform 0.3s; }
+        .gallery-grid img:hover { transform: scale(1.05); }
+        .footer { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); color: white; padding: 3rem 0 1rem; }
+        .back-to-top { position: fixed; bottom: 20px; right: 20px; background: #fbbf24; color: #1e3a8a; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 1.2rem; display: none; transition: all 0.3s; z-index: 1000; }
+        .back-to-top.show { display: block; }
+        .back-to-top:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(251,191,36,0.4); }
+        .breadcrumb { background: #f1f5f9; padding: 1rem; border-radius: 8px; margin-bottom: 2rem; }
+        @media (max-width: 768px) { .hero h1 { font-size: 2.5rem; } .timeline::before { left: 30px; } .timeline-item { margin-left: 50px; } }
+        .fade-in { animation: fadeIn 0.8s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .social-links a { transition: color 0.3s; }
+        .social-links a:hover { color: #fbbf24 !important; transform: scale(1.2); }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-book me-2"></i>Tragedi Trisakti 1998</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html" data-bs-smooth-scroll="true"><i class="bi bi-house me-1"></i>Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="background.html" data-bs-smooth-scroll="true"><i class="bi bi-info-circle me-1"></i>Latar Belakang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="chronology.html" data-bs-smooth-scroll="true"><i class="bi bi-clock-history me-1"></i>Kronologi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="victims.html" data-bs-smooth-scroll="true"><i class="bi bi-people me-1"></i>Korban</a></li>
+                    <li class="nav-item"><a class="nav-link" href="legacy.html" data-bs-smooth-scroll="true"><i class="bi bi-trophy me-1"></i>Warisan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html" data-bs-smooth-scroll="true"><i class="bi bi-images me-1"></i>Galeri</a></li>
+                </ul>
+                <!--<form class="d-flex ms-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Cari sejarah..." aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+                </form>-->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero fade-in">
+        <div class="container">
+            <h1 class="display-2">Tragedi Trisakti 12 Mei 1998</h1>
+            <p class="lead mb-4">Peristiwa Trisakti merupakan aksi demonstrasi mahasiswa pada 12 Mei 1998 yang menuntut Presiden Soeharto untuk segera mundur dari jabatannya (Arief, 2021).</p>
+            <blockquote class="blockquote text-center">
+                <p class="mb-0 fs-5">"Darah pahlawan reformasi mengalir untuk kebebasan bangsa."</p>
+                <footer class="blockquote-footer"></footer>
+            </blockquote>
+            <div class="mt-4">
+                <a href="background.html" class="btn btn-primary btn-lg me-3">Mulai Baca</a>
+                <a href="gallery.html" class="btn btn-outline-light btn-lg">Lihat Galeri</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="breadcrumb">
+        <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item active"><i class="bi bi-house"></i> Beranda</li>
+        </ol>
+    </nav>
+
+    <!--Main Content -->
+    <main class="container my-5">
+        <!-- Teaser Cards -->
+        <section class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card h-100 fade-in">
+                    <img src="WhatsApp Image 2025-10-04 at 21.49.00_a1a1da18.jpg" class="card-img-top" alt="Latar Belakang">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary"><i class="bi bi-book me-2"></i>Latar Belakang</h5>
+                        <p class="card-text">Krisis ekonomi dan rezim otoriter yang memicu gerakan mahasiswa.</p>
+                        <a href="background.html" class="btn btn-primary">Baca Lebih Lanjut</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 fade-in">
+                    <img src="WhatsApp Image 2025-10-05 at 08.59.10_1d2a16f3.jpg" class="card-img-top" alt="Kronologi">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary"><i class="bi bi-clock-history me-2"></i>Kronologi</h5>
+                        <p class="card-text">Jalur waktu peristiwa tragis pada 12 Mei 1998.</p>
+                        <a href="chronology.html" class="btn btn-primary">Baca Lebih Lanjut</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 fade-in">
+                    <img src="WhatsApp Image 2025-10-05 at 09.45.52_2de57631.jpg" class="card-img-top" alt="Warisan">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary"><i class="bi bi-trophy me-2"></i>Warisan</h5>
+                        <p class="card-text">Dampak reformasi dan pelajaran untuk generasi mendatang.</p>
+                        <a href="legacy.html" class="btn btn-primary">Baca Lebih Lanjut</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Facts -->
+        <section class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center p-4 bg-white rounded-3 shadow fade-in">
+                    <i class="bi bi-people display-4 text-primary mb-3"></i>
+                    <h4 class="text-primary">4 Korban</h4>
+                    <p class="text-muted">Mahasiswa Trisakti yang gugur</p>
+                    <a href="victims.html" class="btn btn-outline-primary">Detail</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center p-4 bg-white rounded-3 shadow fade-in">
+                    <i class="bi bi-calendar-event display-4 text-danger mb-3"></i>
+                    <h4 class="text-danger">12 Mei 1998</h4>
+                    <p class="text-muted">Tanggal peristiwa</p>
+                    <a href="chronology.html" class="btn btn-outline-primary">Lihat Timeline</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center p-4 bg-white rounded-3 shadow fade-in">
+                    <i class="bi bi-award display-4 text-warning mb-3"></i>
+                    <h4 class="text-warning">Reformasi</h4>
+                    <p class="text-muted">Jatuhnya Soeharto 3 hari kemudian</p>
+                    <a href="legacy.html" class="btn btn-outline-primary">Pelajaran</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="text-center p-4 bg-white rounded-3 shadow fade-in">
+                    <i class="bi bi-images display-4 text-secondary mb-3"></i>
+                    <h4 class="text-secondary">Galeri</h4>
+                    <p class="text-muted">Foto dan dokumen historis</p>
+                    <a href="gallery.html" class="btn btn-outline-primary">Jelajahi</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <h5 class="mb-4"><i class="bi bi-journal-text me-2"></i>Daftar Pustaka</h5>
+            <ul class="list-unstyled">
+                <li class="mb-3">
+                    <strong>Arief, M.</strong> (2021). <em>Gerakan Mahasiswa dalam transisi politik Indonesia. </em>  Jakarta: Rajawali pers
+                </li>
+               <li class="mb-3">
+                    <strong>Arief, M.</strong> (2021). <em>Re-Evaluasi Proses Penyelesaian Pelanggaran Hak Asasi Manusia – Peristiwa Trisakti 1998.</em>  Kalabbirang Law Journal, 3(1), April 2021.
+                </li>
+                <li class="mb-3">
+                    <strong>Aryanto, D.</strong> (2023). <em>Menelisik Potret Sejarah Pelaksanaan Pemilu Tahun 1977: Detik-Detik Runtuhnya Tirani Kekuasaan Soeharto.</em> Jurnal Nirwasita, 4(2), 114.
+                <li class="mb-3">
+                    <strong>Azwar, A.</strong> (2021). <em>Dwifungsi TNI dari Masa ke Masa. </em> Jurnal Academia Praja, 4(1), 168
+                </li>
+                <li class="mb-3">
+                    <strong>Baity, A.N.</strong> (2016). <em>Persepsi Aktivis Mahasiswa 1998 Tentang Demonstrasi Tahun 1998 Dalam Rangka Menurunkan Soeharto.</em> Kajian Moral dan Kewarganegaraan, 3(7), 1680.
+                <li class="mb-3">
+                    <strong>Dienaputra R.D, et al</strong> (2001). <em>Prosesi Peralihan Kekuasaan Dari Habibie Ke Abdurahman Wahid </em> Jurnal Sisiohumaniora, 3(3), 182.
+                </li>
+                <li class="mb-3">
+                    <strong>Fairuza, R.</strong> (2024). <em>Tragedi Trisakti dan refleksi demokrasi Indonesia.</em> Jurnal Sejarah Kontemporer, 12(1), 45–59.
+                </li>    
+                <li class="mb-3">
+                    <strong>Febriana, I.</strong> (2024). <em>Rekonsiliasi Negara dalam Penyelesaian Kasus Pelanggaran HAM Berat Masa Lalu (Studi Kasus Tragedi Trisakti dan Kerusuhan Mei 1998).</em> Formosa Journal of Applied Sciences, 3(3), 918.
+                </li>
+                <li class="mb-3">
+                    <strong>Febriyanti, D.</strong> (2016). <em>Signifikansi Surat Kabar Kompas Dalam Pemberitaan Peristiwa Reformasi 98.</em> Jurnal Pendidikan Sejarah, 4(3), 1196.
+                </li>
+                <li class="mb-3">
+                    <strong>Fitria, A., & Wiranata, B.</strong> (2025). <em>Krisis moneter Asia dan dampaknya terhadap Indonesia.</em> Jurnal Ekonomi dan Politik, 18(2), 101–118.
+                </li>
+                <li class="mb-3">
+                    <strong>Herlambang, A.</strong> (2019). <em> Reformasi dan peristiwa Trisakti.</em> Yogyakarta: Pustaka Pelajar.
+                </li>
+                <li class="mb-3">
+                    <strong>Jubaedah, S.</strong> (2019). <em>GERAKAN MAHASISWA (Kajian Tentang Peranan Mahasiswa Universitas Trisakti Pada Mei 1998 Dalam Proses Pergantian Kekuasaan Orde Baru).</em> Jurnal Pendidikan Sejarah, 8(2), 35.
+                </li>
+                <li class="mb-3">
+                    <strong>Julianti, J.</strong> (2014). <em>Museum Tragedi Mei 1998 di Jakarta.</em> Jurnal eDimensi Arsitektur, 2(1), 53.
+                </li>
+                <li class="mb-3">
+                    <strong>Jupriono, D.</strong> (2010). <em>Analisis Wacana Kritis Latar Historis dalam Pidato Kenegaraan Presiden Susilo Bambang Yudhoyono.</em> Jurnal Parafrase, 10(2), 42-48.
+                </li>
+                <li class="mb-3">
+                    <strong>Lindawati, D.S </strong> (2013). <em>Strategi Partai Politik Dalam Menghadapi Pemilu.</em> Jurnal Politica Dinamika Masalah Politik, 4(2), 259
+                </li>
+                <li class="mb-3">
+                    <strong>Palenewal, J.D.O.</strong> (2022). <em>Penerapan Sistem Pemilu di Indonesia Pasca Reformasi.</em> Jurnal Ilmu Sosial, 9(2), 506.
+                </li>
+                <li class="mb-3">
+                    <strong>Pertama</strong> (2004). <em>Amandemen UUD 1945</em> 
+                </li>
+                <li class="mb-3">
+                    <strong>Sari</strong> (2010). <em>Analisis strategi pemasaran pariwisata di Trisakti. </em>  Jurnal Pariwisata Trisakti, 5(1), 45-58.
+                </li>
+                <li class="mb-3">
+                    <strong>Ulfiyyati, A.</strong> (2023). <em>Demokrasi: Tinjauan Terhadap Konsep , Tantangan, dan Prospek Masa Depan.</em> Jurnal Advances In Social Humanities Research, 1(4), 437
+                </li>
+                <li class="mb-3">
+                    <strong>Wijasih, R. </strong> (2016). <em>Prospek Penyelesaian Kasus Pelanggaran HAM Dalam Tragedi Trisakti. </em> Jurnal Pembelajaran IPS dan PKN 1 (1), 1-13
+                </li>
+                <li class="mb-3">
+                    <strong>Wijaya </strong> (2021). <em>Studi tentang pengaruh kebijakan Trisakti dalam pengembangan usaha.</em> Jurnal Ekonomi Trisakti, 10(2), 123-135.
+                </li>
+                
+            </ul>
+            <hr class="my-4 border-light">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 Dokumentasi Tragedi Trisakti 1998. Daftar pustaka ini disusun untuk mendukung edukasi dan penelitian sejarah Indonesia.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <!-- Back to Top Button -->
+    <button class="back-to-top" onclick="scrollToTop()" title="Kembali ke Atas" aria-label="Kembali ke atas halaman">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS untuk Back-to-Top -->
+    <script>
+        // Fungsi scroll smooth ke atas
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show/hide back-to-top button saat scroll
+        window.addEventListener('scroll', function() {
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) { // Muncul setelah scroll 300px
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        // Optional: Smooth scroll untuk internal links (jika ada anchor di page)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Optional: Search functionality sederhana (filter konten jika diperlukan)
+        document.querySelector('form[role="search"]').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const query = this.querySelector('input[type="search"]').value;
+            if (query) {
+                alert('Mencari: "' + query + '" – Fitur pencarian akan diimplementasikan penuh di versi selanjutnya.');
+                // Di sini bisa tambah logic search real, misal filter cards
+            }
+        });
+    </script>
+</body>
+</html>

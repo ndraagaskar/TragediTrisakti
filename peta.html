@@ -1,0 +1,129 @@
+<!-- Tambahkan ini di <head> halaman Anda untuk Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Section: Peta Demonstrasi Gelombang Reformasi -->
+<section class="container my-5" id="peta-demonstrasi">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="section-title fade-in mb-4">Peta Demonstrasi Gelombang Reformasi 1998</h2>
+            <p class="lead text-muted mb-4">Peta interaktif ini menampilkan lokasi dan rute demonstrasi mahasiswa Trisakti selama gelombang reformasi. Klik marker untuk detail sejarah dan gambar terkait. Zoom dan pan untuk eksplorasi lebih lanjut.</p>
+        </div>
+    </div>
+
+    <!-- Container untuk Peta Leaflet -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <div id="map" style="height: 500px; border: 2px solid #dee2e6; border-radius: 8px;"></div>
+        </div>
+    </div>
+
+    <!-- Tombol untuk Membuka Modal Detail -->
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#detailModalPeta">
+                <i class="bi bi-info-circle me-2"></i>Lihat Detail Demonstrasi
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Script untuk Inisialisasi Peta (Letakkan sebelum </body> atau di file JS terpisah) -->
+<script>
+    // Inisialisasi peta saat halaman dimuat
+    document.addEventListener('DOMContentLoaded', function() {
+        // Buat peta dengan pusat di area Trisakti, Jakarta (zoom level 13 untuk detail kota)
+        var map = L.map('map').setView([-6.2005, 106.7934], 13);
+
+        // Tambahkan layer peta dasar dari OpenStreetMap (peta sungguhan)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            maxZoom: 19
+        }).addTo(map);
+
+        // Marker 1: Universitas Trisakti (Lokasi tragedi utama)
+        var markerTrisakti = L.marker([-6.2005, 106.7934]).addTo(map);
+        markerTrisakti.bindPopup(`
+            <div class="p-3">
+                <h6><i class="bi bi-geo-alt text-danger"></i> Universitas Trisakti</h6>
+                <p class="mb-2">Lokasi penembakan 12 Mei 1998. Empat mahasiswa tewas: Elang Mulia Lesmana, Heri Hartanto, Hafidin Royan, dan Hendriawan Sie.</p>
+                <!-- Tempat untuk gambar yang Anda unggah: Ganti src dengan path gambar Anda -->
+                <img src="assets/images/tragedi-trisakti.jpg" class="img-fluid rounded mb-2" alt="Tragedi Trisakti" style="max-height: 150px; width: 100%;">
+                <small class="text-muted">Unggah gambar Anda di sini untuk tampil di popup.</small>
+            </div>
+        `);
+
+        // Marker 2: Bundaran HI (Rute demonstrasi)
+        var markerBundaranHI = L.marker([-6.2094, 106.8203]).addTo(map);
+        markerBundaranHI.bindPopup(`
+            <div class="p-3">
+                <h6><i class="bi bi-geo-alt text-primary"></i> Bundaran HI</h6>
+                <p class="mb-2">Titik kumpul demonstran menuju Senayan. Simbol perlawanan rakyat terhadap rezim Orde Baru.</p>
+                <!-- Gambar unggah: Ganti src -->
+                <img src="assets/images/bundaran-hi-1998.jpg" class="img-fluid rounded mb-2" alt="Bundaran HI" style="max-height: 150px; width: 100%;">
+            </div>
+        `);
+
+        // Marker 3: Gelora Bung Karno/Senayan (Tujuan demonstrasi)
+        var markerSenayan = L.marker([-6.2197, 106.8001]).addTo(map);
+        markerSenayan.bindPopup(`
+            <div class="p-3">
+                <h6><i class="bi bi-geo-alt text-success"></i> Gelora Bung Karno (Senayan)</h6>
+                <p class="mb-2">Tujuan utama demonstrasi mahasiswa Trisakti. Di sini, gelombang reformasi semakin membesar.</p>
+                <!-- Gambar unggah: Ganti src -->
+                <img src="assets/images/senayan-reformasi.jpg" class="img-fluid rounded mb-2" alt="Senayan" style="max-height: 150px; width: 100%;">
+            </div>
+        `);
+
+        // Opsional: Tambahkan Polyline untuk rute demonstrasi (garis penghubung marker)
+        var route = L.polyline([
+            [-6.2005, 106.7934],  // Trisakti
+            [-6.2094, 106.8203],  // Bundaran HI
+            [-6.2197, 106.8001]   // Senayan
+        ], {color: 'red', weight: 3, opacity: 0.7}).addTo(map);
+        route.bindPopup('<b>Rute Demonstrasi Trisakti 1998</b><br>Garis merah menunjukkan jalur perjalanan mahasiswa.');
+
+        // Opsional: Overlay gambar kustom Anda di atas peta (jika Anda punya gambar peta statis)
+        // Uncomment dan sesuaikan jika diperlukan
+        /*
+        var imageUrl = 'assets/images/peta-kustom-anda.png';  // Path gambar peta Anda
+        var imageBounds = [[-6.25, 106.75], [-6.15, 106.85]];  // Bounds gambar (sesuaikan koordinat)
+        L.imageOverlay(imageUrl, imageBounds).addTo(map);
+        */
+    });
+</script>
+
+<!-- Modal Detail Demonstrasi (Sama seperti sebelumnya, tapi dengan update footer) -->
+<div class="modal fade" id="detailModalPeta" tabindex="-1" aria-labelledby="detailModalPetaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="detailModalPetaLabel">
+                    <i class="bi bi-map me-2 text-primary"></i>Detail Rute Demonstrasi Trisakti 1998
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="mb-3">Pada 12 Mei 1998, mahasiswa Trisakti berunjuk rasa dari kampus menuju Bundaran HI. Tragedi penembakan terjadi di Jl. Kyai Tapa, menewaskan empat mahasiswa. Demonstrasi ini menjadi pemicu jatuhnya rezim Orde Baru.</p>
+                
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>Lokasi Utama:</strong> Universitas Trisakti (Jl. Kyai Tapa, Grogol)</li>
+                    <li class="list-group-item"><strong>Rute:</strong> Menuju Senayan dan Bundaran HI</li>
+                    <li class="list-group-item"><strong>Tanggal Kunci:</strong> 12 Mei 1998</li>
+                    <li class="list-group-item"><strong>Dampak:</strong> Mundurnya Presiden Soeharto pada 21 Mei 1998</li>
+                </ul>
+                
+                <div class="mt-3">
+                    <!-- Gambar unggah di modal: Ganti src -->
+                    <img src="20210511PE_FIQ_Lokasi_Penting_Peristiwa_Mei_98_Klender_Revisi_Foto.jpg" class="img-fluid rounded" alt="Rute Demonstrasi Trisakti" style="max-height: 300px;">
+                    <small class="text-muted d-block mt-2">Sumber: Arsip Sejarah Nasional. Unggah gambar Anda untuk tampil di sini.</small>
+                </div>
+            </div>
+            <!-- Footer Modal yang Anda Berikan -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <a href="gallerygelombangreformasi.html" class="btn btn-primary">Lihat Peta Demonstrasi</a>
+            </div>
+        </div>
+    </div>
+</div>
